@@ -11,7 +11,7 @@ pwm = GPIO.PWM(servo_pin, 50)  # 50Hz frequency
 pwm.start(0)
 
 def set_angle(angle):
-    duty_cycle = 2 + (angle / 18)
+    duty_cycle = 2 + (angle / 36)
     GPIO.output(servo_pin, True)
     pwm.ChangeDutyCycle(duty_cycle)
     time.sleep(1)
