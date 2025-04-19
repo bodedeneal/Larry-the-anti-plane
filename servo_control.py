@@ -20,7 +20,7 @@ def set_angle(angle):
 
 try:
     while True:
-        angle = float(input("Enter angle (0-180): "))
+        angle = float(input("Enter angle (0-360): "))
         set_angle(angle)
 except KeyboardInterrupt:
     print("Exiting...")
